@@ -4,13 +4,13 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hello, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def f(x):
+    return x**2
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+def g(x):
+    return x**3
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+funcs = [f, g]
+print(funcs[0](5), funcs[1](5))
